@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main className="min-w-full text-white">
@@ -6,7 +8,7 @@ export default function Home() {
           <div className="flex items-center gap-3 mb-8">
             <div className="w-2 h-2 rounded-full bg-emerald-400" />
             <span className="text-xs font-mono text-white/40 tracking-widest">
-              SYSTEM ONLINE
+              ABOUT TO CREATE A PROJECT? START HERE 👇
             </span>
           </div>
 
@@ -20,13 +22,13 @@ export default function Home() {
           </p>
 
           <div className="flex gap-4 mt-10">
-            <button className="px-6 py-3 rounded-md bg-white text-black font-medium hover:bg-white/90 transition">
+            <Link href="/dashboard" className="px-6 py-3 rounded-md bg-white text-black font-medium hover:bg-white/90 transition">
               Open Dashboard
-            </button>
+            </Link>
 
-            <button className="px-6 py-3 rounded-md border border-white/10 hover:border-white/30 transition">
+            <Link href="/learn-more" className="px-6 py-3 rounded-md border border-white/10 hover:border-white/30 transition">
               Learn More
-            </button>
+            </Link>
           </div>
         </div>
       </section>
